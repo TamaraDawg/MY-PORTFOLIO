@@ -1,2 +1,2 @@
 # MY-PORTFOLIO
-my portfolio 
+This is my porfolio, it broadcasts my best coding work. 
