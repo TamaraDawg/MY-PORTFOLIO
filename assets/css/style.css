@@ -2,27 +2,29 @@
     --dark: #331689;
     --light: #E2DCFD;
     --hover: #d4caf3;
+    --bg: rgb(233, 226, 238) ;
 }
 
-
+.body {
+    background-color: var(--bg);
+}
 /*NAVIGATION BAR CSS*/
 .topnav {
-    float: right;
     width: 100%;
     background-color: var(--dark);
+    padding: 0.8rem 0.5rem;
 }
 .topnav a {
-    
-    float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 0.875rem 1rem;
+    padding: 0.8rem 0.5rem ;
     text-decoration: none;
     font-size: 1.063rem;
   }
 
-.topnav a:hover {
+a:hover {
     background-color:var(--hover);
+    opacity: 70%;
   color: var(--dark);
 }
 
@@ -34,7 +36,6 @@
    
 }
 
-    
 /*MAIN IMAGE*/
 .container {
     position: relative;
@@ -42,14 +43,16 @@
     color: white;
 }
 .imgtext {
-    
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     color: var(--dark);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
+    font-size: 4em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 70%;
 }
 #mainimg {
     max-width: 100%;
@@ -57,6 +60,21 @@
     opacity: 50%;
 }
 
+
+
+
+
+
 @media screen (max-width 1222px) {
     
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: var(--dark);
+    color: white;
+    padding: 0.25rem;
+    font-size: small;
+    text-align: center;
 }
