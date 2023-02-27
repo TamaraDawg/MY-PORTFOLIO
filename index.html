@@ -2,54 +2,64 @@
 
 <head> 
     <meta charset="UTF-8" />
-    
+    <!--added a reset stylesheet-->
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     
     <link rel="stylesheet" href="./assets/css/style.css"/>
     
-    <title> TAMARA'S CODING SOFTWARE ENGINEER PORTFOLIO</title>
+    <title> TAMARA'S CODING SOFTWARE DEVELOPMENT PORTFOLIO</title>
 
 </head>
 
 
 <body class="body"> 
-    
+<!-- heading for accessibility-->
     <header class="header"> 
-        <h1> Tamara's CODING PORTFOLIO  </h1>
+        <h1> TAMARA'S PORTFOLIO  </h1>
     </header> 
-
+<!--navigation bar -->
  <nav class="topnav">
-    
+    <!--added links to allow a jump to sections of the page for easier navigation-->
     <a class="active" href="#HOME">Home</a>
     <a href="#ABOUT">About Me</a>
-    <a href="WORK">My Work</a>
-    <a href="CONTACT">Contact Me</a>
+    <a href="#WORK">My Work</a>
+    <a href="#CONTACT">Contact Me</a>
 
 </nav>
+<!--main image-->
 <section class="container">
     <img id="mainimg" src="./assets/images/PURPLE MOUNTAIN.jpg" alt="photo of purple mountains">
 <p class="imgtext"> TAMARA SFERCO</p>
 </section>
 
+<!--About me -->
+<article class="aboutme">
+    <h2> About Me </h2>
+    <p> I'm <span id="highlight">Tamara</span>, I love all things technical and creative. I am an <span id="highlight">aspiring Front-End Engineer</span> who can build a website with <span id="highlight">HTML, CSS and GitHub Pages.</span> </p>
+</article>
+<!--Showcase of Works-->
 
-<section class="contact">
-    <form action="action_page.php">
+
+<!-- Contact form -->
+
+    <article class="contactform">
+    <h2 id="CONTACT">Contact Me</h2>
   
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input id="text" id="fname" name="firstname" placeholder="Your name..">
   
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input id="text" id="lname" name="lastname" placeholder="Your last name..">
   
-      <label for="subject">Subject</label>
+      <label for="message">Message</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
+      <input id="submit" value="Submit">
   
-    </form>
-</section>
+    </article>
+
 
 </body>
 
-
+<!--footer-->
 <footer> Created By Tamara Sferco </footer>

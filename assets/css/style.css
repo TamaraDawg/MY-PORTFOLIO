@@ -1,3 +1,4 @@
+/* Entire Site General Theme */
 :root {
     --dark: #331689;
     --light: #E2DCFD;
@@ -8,12 +9,37 @@
 .body {
     background-color: var(--bg);
 }
+
+h1 {
+
+    margin: 0.8rem 0.2rem 0.2rem 0.2rem;
+     color: var(--light);
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark);
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+#highlight {
+    color: var(--dark);
+    font-style: inherit;
+}
+
 /*NAVIGATION BAR CSS*/
 .topnav {
     width: 100%;
     background-color: var(--dark);
     padding: 0.8rem 0.5rem;
 }
+
 .topnav a {
     color: #f2f2f2;
     text-align: center;
@@ -59,7 +85,43 @@ a:hover {
     
     opacity: 50%;
 }
+/*ABOUT ME SECTION*/
 
+ /* CONTACT FORM */
+ /* General Style */
+#text, select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+
+  }
+  
+  /* SUBMIT BUTTON */
+  #submit {
+    background-color: var(--dark);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: var(--light);
+    color: var(--dark);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contactform {
+    color: var(--dark);
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+  }
 
 
 
