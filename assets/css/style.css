@@ -11,7 +11,7 @@
 }
 
 h1 {
-
+display: none;
     margin: 0.8rem 0.2rem 0.2rem 0.2rem;
      color: var(--light);
     float: left;
@@ -33,26 +33,45 @@ h2 {
     font-style: inherit;
 }
 
-/*NAVIGATION BAR CSS*/
+/*NAVIGATION BAR STYLE CSS*/
 .topnav {
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     background-color: var(--dark);
-    padding: 0.8rem 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 1.75rem;
+    padding-bottom: 0.5rem;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .topnav a {
+    display:inline;
     color: #f2f2f2;
     text-align: center;
     padding: 0.8rem 0.5rem ;
     text-decoration: none;
     font-size: 1.063rem;
+    transition: 0.3s;
   }
 
-a:hover {
+.topnav a:hover {
     background-color:var(--hover);
     opacity: 70%;
   color: var(--dark);
 }
+
+
+
+
+.topnav ul {
+    list-style-type: none;
+}
+
+
+
 
 
 /*HEADER*/
@@ -127,9 +146,6 @@ a:hover {
 
 
 
-@media screen (max-width 1222px) {
-    
-}
 
 /*FOOTER*/
 footer {
@@ -139,4 +155,28 @@ footer {
     padding: 0.25rem;
     font-size: small;
     text-align: center;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 1.125rem}
+}
+@media screen and (min-width: 768px) {
+
+    /*Adjusted NavBar to fit large screen*/
+.topnav { 
+    padding-top: 0.8rem;
+
+}
+    .Flex-Container {
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+
+
+
+
 }
