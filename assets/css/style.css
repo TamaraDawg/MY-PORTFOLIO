@@ -11,7 +11,7 @@
 }
 
 h1 {
-display: none;
+    display: none;
     margin: 0.8rem 0.2rem 0.2rem 0.2rem;
      color: var(--light);
     float: left;
@@ -56,7 +56,7 @@ button {
     padding-top: 1.75rem;
     padding-bottom: 0.5rem;
     overflow-x: hidden; */
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 #hamburger {
@@ -91,7 +91,7 @@ button {
     cursor: pointer;
     background-color:var(--hover);
     opacity: 70%;
-  color: var(--dark);
+    color: var(--dark);
 }
 
 
@@ -108,6 +108,7 @@ button {
 
 /*MAIN IMAGE*/
 .container {
+    margin-top: 0.3rem;
     position: relative;
     text-align: center;
     color: white;
@@ -130,9 +131,18 @@ button {
     opacity: 80%;
 }
 /*ABOUT ME SECTION*/
+#me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-color: #33316890;
+    border: 3rem   
+}
 .aboutme {
     background-color: var(--bg);
     padding: 2rem;
+    
 }
 .aboutme p {
     font-size: 1.2rem;
@@ -142,7 +152,9 @@ button {
 }
 
 /*WORKS/PORTFOLIO*/
-
+.work h2 {
+    color: var(--light);
+}
 
  /* CONTACT FORM */
  /* General Style */
@@ -198,25 +210,29 @@ footer {
 @media screen and (min-width: 768px) {
 
     /*Adjusted NavBar to fit large screen*/
-.hamnav {
-    display: none;
-}
-
-    .topnav { 
- 
-    padding-top: 0.8rem;
-
-}
+    .topnav a {
+        display: inline;
+        padding: 0.5rem 1rem 1rem 1rem;
+       
+    }
+    
     .topnav {
-    display: flex;
-    justify-content: right;
-}
+        
+        float: right;
+        display: block;
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    .hamnav label {
+       display: none ;
+    }
 
 }
 
 
-@media screen and (max-width: 339px) {
+@media screen and (max-width: 400px) {
    
+    
     .imgtext {
         opacity: 0% ;
     }
