@@ -17,17 +17,23 @@
     <header class="header"> 
         <h1> TAMARA'S PORTFOLIO  </h1>
     </header> 
-<!--navigation bar -->
- <nav class="topnav">
-    <!--this ul is to allow a Flex Container to help code be compatible with various screen sizes, but will not be visible.-->
-    <ul class="Flex-Container"> 
-        <!-- added links to allow a jump to sections of the page for easier navigation--> 
-    <a href="#HOME">Home</a>
-    <a href="#ABOUT">About Me</a>
-    <a href="#WORK">My Work</a>
-    <a href="#CONTACT">Contact Me</a>
-    </ul> 
 
+    <!--navigation wrapper for small devices -->
+<nav class="hamnav">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+<div class="topnav">
+
+    <!--this ul is to allow a Flex Container to help code be compatible with various screen sizes, but will not be visible.-->
+    <ul>
+        <!-- added links to allow a jump to sections of the page for easier navigation--> 
+        <a href="#HOME">Home</a>
+        <a href="#ABOUT">About Me</a>
+        <a href="#WORK">My Work</a>
+        <a href="#CONTACT">Contact Me</a>
+    </ul>
+    
+</div>
 </nav>
 <!--main image-->
 <section class="container">
@@ -41,7 +47,7 @@
     <p> I'm <span id="highlight">Tamara</span>, I love all things technical and creative. I am an <span id="highlight">aspiring Front-End Engineer</span> who can build a website with <span id="highlight">HTML, CSS and GitHub Pages.</span> </p>
 </article>
 <!--Showcase of Works-->
-
+<article class="work"
 
 <!-- Contact form -->
 
