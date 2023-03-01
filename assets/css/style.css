@@ -3,7 +3,7 @@
     --dark: #331689;
     --light: #E2DCFD;
     --hover: #d4caf3;
-    --bg: rgb(233, 226, 238) ;
+    --bg: rgb(233, 226, 238);
 }
 
 .body {
@@ -13,7 +13,7 @@
 h1 {
     display: none;
     margin: 0.8rem 0.2rem 0.2rem 0.2rem;
-     color: var(--light);
+    color: var(--light);
     float: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -39,6 +39,7 @@ button {
     margin-top: 1rem;
     font-size: 1rem;
 }
+
 #highlight {
     color: var(--dark);
     font-style: inherit;
@@ -46,6 +47,7 @@ button {
 
 /*NAVIGATION BAR STYLE CSS*/
 .topnav {
+
     /*display: none;
     width: 100%;
     position: fixed;
@@ -62,8 +64,9 @@ button {
 #hamburger {
     opacity: 0;
 }
+
 .hamnav label {
-    
+
     display: inline-block;
     color: white;
     background: var(--dark);
@@ -71,9 +74,14 @@ button {
     font-size: 1.2em;
     padding: 10px;
 }
-.topnav { display: none;}
 
-.hamnav input:checked ~ .topnav {display: block;}
+.topnav {
+    display: none;
+}
+
+.hamnav input:checked~.topnav {
+    display: block;
+}
 
 .topnav a {
     background: var(--dark);
@@ -81,15 +89,15 @@ button {
     width: 100%;
     color: #f2f2f2;
     text-align: left;
-    padding: 0.8rem 0.5rem ;
+    padding: 0.8rem 0.5rem;
     text-decoration: none;
     font-size: 1.063rem;
     transition: 0.3s;
-  }
+}
 
 .topnav a:hover {
     cursor: pointer;
-    background-color:var(--hover);
+    background-color: var(--hover);
     opacity: 70%;
     color: var(--dark);
 }
@@ -103,7 +111,7 @@ button {
 .header {
     color: var(--light);
     background-color: var(--light);
-   
+
 }
 
 /*MAIN IMAGE*/
@@ -113,11 +121,12 @@ button {
     text-align: center;
     color: white;
 }
+
 .imgtext {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     color: var(--light);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     position: absolute;
     top: 50%;
@@ -125,75 +134,151 @@ button {
     transform: translate(-50%, -50%);
     opacity: 100%;
 }
+
 #mainimg {
     max-width: 100%;
-    
+
     opacity: 80%;
 }
+
 /*ABOUT ME SECTION*/
-#me {
+#ABOUT {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border-color: #33316890;
-    border: 3rem   
 }
+
+#ABOUT:hover {
+   
+}
+
 .aboutme {
-    background-color: var(--bg);
+    background: var(--bg);
     padding: 2rem;
-    
+
 }
+
 .aboutme p {
     font-size: 1.2rem;
     text-align: center;
     margin: 1rem 2rem 2rem 2rem
-
 }
 
 /*WORKS/PORTFOLIO*/
 .work h2 {
     color: var(--light);
+    margin-bottom: 1rem;
 }
 
- /* CONTACT FORM */
- /* General Style */
-#text, select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px;
-    margin-bottom: 16px; 
+.maincontainer {
+    display: flex;
+}
+.subcontainer {
+    position: relative;
+  /*  max-width: 25rem; */
+}
 
-  }
-  
-  /* SUBMIT BUTTON */
-  #submit {
+.gallery {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#horiseon {
+    width: 600px;
+}
+.subcontainer img {
+    width: 300px;
+    opacity: 50%;
+}
+/*.gallery img {
+    opacity: 50%;
+    border-radius: 1.5625rem;
+
+} */
+
+.subcontainer a img:hover {
+    opacity: 30%;
+    border: 5px solid var(--light);
+}
+
+.subcontainer .content {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    background: rgba(31, 0, 80, 0.651);
+    color: white;
+    padding: 20px;
+}
+
+
+
+/* CONTACT FORM */
+/* General Style */
+#text,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+/* SUBMIT BUTTON */
+#submit {
     background-color: var(--dark);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  #submit:hover {
+}
+
+#submit:hover {
     background-color: var(--light);
     color: var(--dark);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .contactform {
+}
+
+/* Add a background color and some padding around the form */
+.contactform {
     color: var(--dark);
     border-radius: 5px;
     background-color: rgb(241, 241, 241);
     padding: 20px;
-  }
+}
+
+.contactform p {
+    text-align: center;
+}
+
+.contactform h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contactform ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
 
 
+}
 
+.contactform a {
+    text-decoration: none;
+
+}
+
+.contactform a:hover {
+    color: #675896
+}
 
 
 
@@ -213,32 +298,37 @@ footer {
     .topnav a {
         display: inline;
         padding: 0.5rem 1rem 1rem 1rem;
-       
+
     }
-    
+
     .topnav {
-        
+
         float: right;
         display: block;
         padding: 0.5rem 1rem 1rem 1rem;
     }
 
     .hamnav label {
-       display: none ;
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 2000px) {
+
+    #ABOUT {
+        width: 25%;
     }
 
 }
 
 
 @media screen and (max-width: 400px) {
-   
-    
+
+
     .imgtext {
-        opacity: 0% ;
+        opacity: 0%;
     }
-    
+
 }
-
-
-
-

@@ -1,75 +1,120 @@
-
-
-<head> 
+<head>
     <meta charset="UTF-8" />
     <!--added a reset stylesheet-->
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    
-    <link rel="stylesheet" href="./assets/css/style.css"/>
-    
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title> TAMARA'S CODING SOFTWARE DEVELOPMENT PORTFOLIO</title>
 
 </head>
 
 
-<body class="body"> 
-<!-- heading for accessibility-->
-    <header class="header"> 
-        <h1> TAMARA'S PORTFOLIO  </h1>
-    </header> 
+<body class="body">
+    <!-- heading for accessibility-->
+    <header class="header">
+        <h1> TAMARA'S PORTFOLIO </h1>
+    </header>
 
     <!--navigation wrapper for small devices -->
-<nav class="hamnav">
-    <label for="hamburger">&#9776;</label>
-    <input type="checkbox" id="hamburger"/>
-<div class="topnav">
+    <nav class="hamnav">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+        <div class="topnav">
 
-    <!--this ul is to allow a Flex Container to help code be compatible with various screen sizes, but will not be visible.-->
-    <ul>
-        <!-- added links to allow a jump to sections of the page for easier navigation--> 
-        <a href="#HOME">Home</a>
-        <a href="#ABOUT">About Me</a>
-        <a href="#WORK">My Work</a>
-        <a href="#CONTACT">Contact Me</a>
-    </ul>
-    
-</div>
-</nav>
-<!--main image-->
-<section class="container">
-    <img id="mainimg" src="./assets/images/PURPLE MOUNTAIN.jpg" alt="photo of purple mountains">
-    <p class="imgtext"> TAMARA SFERCO</p>
-</section>
+            <!--this ul is to allow a Flex Container to help code be compatible with various screen sizes, but will not be visible.-->
+            <ul>
+                <!-- added links to allow a jump to sections of the page for easier navigation-->
+                <a href="#HOME">Home</a>
+                <a href="#ABOUT">About Me</a>
+                <a href="#WORK">Projects </a>
+                <a href="#CONTACT">Contact Me</a>
+            </ul>
 
-<!--About me -->
-<article class="aboutme">
-    <img id="me" src="./assets/images/me.png" alt="Photo of Tamara">
-    <h2> About Me </h2>
-    <p> I'm <span id="highlight">Tamara</span>, I love all things technical and creative. I am an <span id="highlight">aspiring Front-End Engineer</span> who can build a website with <span id="highlight">HTML, CSS and GitHub Pages.</span> </p>
+        </div>
+    </nav>
+    <!--main image-->
+    <section class="container">
+        <img id="mainimg" src="./assets/images/PURPLE MOUNTAIN.jpg" alt="photo of purple mountains">
+        <p class="imgtext"> TAMARA SFERCO</p>
+    </section>
 
-</article>
-<!--Showcase of Works-->
-<article class="work">
-<h2> Portfolio </h2>
+    <!--About me Section -->
+    <article class="aboutme">
+        <img id="ABOUT" src="./assets/images/me.png" alt="Photo of Tamara">
+        <h2> About Me </h2>
+        <p> I'm <span id="highlight">Tamara</span>, I love all things technical and creative. I am an <span
+                id="highlight">aspiring Front-End Engineer</span> who can build a website with <span
+                id="highlight">HTML, CSS and GitHub Pages.</span> </p>
 
-</article>
+    </article>
+    <!--Showcase of Works Section-->
+    <article class="work">
+        <h2 id="WORK"> Projects </h2>
 
-<!-- Contact form -->
+        <!--Portfolio Gallery -->
+        <div class="gallery">
+            <div class="subcontainer">
+                <a href="https://tamaradawg.github.io/HOMEWORK1/">
+                    <img id="horiseon" src="./assets/images/horiseon.png" alt="horiseon website thumbnail">
+
+
+                    <div class="content">
+                        <h3> HORISEON OPTIMISATION </h3>
+                        <p> Improving the SEO and Accessibility of the Horiseon Website.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="maincontainer">
+                <div class="subcontainer">
+                    <a href="https://tamaradawg.github.io/HOMEWORK1/">
+                        <img src="./assets/images/horiseon.png" alt="horiseon website thumbnail">
+
+
+                        <div class="content">
+                            <h3> PLACEHOLDER </h3>
+                            <p> This is a placeholder whilst I have not yet completed enough work to showcase.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="subcontainer">
+                    <a href="https://tamaradawg.github.io/HOMEWORK1/">
+                        <img src="./assets/images/horiseon.png" alt="horiseon website thumbnail">
+
+
+                        <div class="content">
+                            <h3> PLACEHOLDER </h3>
+                            <p> This is a placeholder whilst I have not yet completed enough work to showcase.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+    <!-- Contact form -->
 
     <article class="contactform">
-    <h2 id="CONTACT">Contact Me</h2>
-  
-      <label for="fname">First Name</label>
-      <input id="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input id="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="message">Message</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input id="submit" value="Submit">
-  
+        <h2 id="CONTACT">Contact Me</h2>
+        <p> Fill out your details below to contact me via email! </p>
+        <label for="fname">First Name</label>
+        <input id="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input id="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="message">Message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input id="submit" value="Submit">
+        <h3> Socials </h3>
+
+        <ul>
+            <a href="https://github.com/TamaraDawg"> GITHUB </a>
+            <a href="https://www.linkedin.com/in/tamara-sferco-131273228/"> LINKEDIN </a>
+        </ul>
     </article>
 
 
