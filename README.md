@@ -12,6 +12,7 @@ To achieve this with HTML and CSS;
 -The first Project shown in the work samples, is larger than the rest, for better visibility and acknowledgment. When the thumbnail image is clicked, it opens the deployed application described. 
 -The website effectively suits both large and small screens, with the images resizing and the navbar changing from a dropdown navbar to a visible inline top navbar depending on the viewport. 
 
+GITHUB DEPLOYMENT: https://tamaradawg.github.io/MY-PORTFOLIO/
 
 DEPLOYMENT ON DESKTOP/LARGE SCREENS:
 ![LARGE SCREEN DEPLOYMENT](https://user-images.githubusercontent.com/122523521/222296289-65fcc05f-6720-4059-9e91-cf8acd19bfa7.png)
