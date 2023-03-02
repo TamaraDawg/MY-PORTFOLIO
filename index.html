@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <!--Title of my Portfolio-->
     <title> TAMARA'S CODING SOFTWARE DEVELOPMENT PORTFOLIO</title>
 
 </head>
@@ -22,7 +22,7 @@
         <input type="checkbox" id="hamburger" />
         <div class="topnav">
 
-            <!--this ul is to allow a Flex Container to help code be compatible with various screen sizes, but will not be visible.-->
+            <!--this ul is to allow a container to help code be compatible with various screen sizes, but will not be visible.-->
             <ul>
                 <!-- added links to allow a jump to sections of the page for easier navigation-->
                 <a href="#HOME">Home</a>
@@ -36,13 +36,16 @@
     <!--main image-->
     <section class="container">
         <img id="mainimg" src="./assets/images/PURPLE MOUNTAIN.jpg" alt="photo of purple mountains">
+        <!--text which is placed on top of main image-->
         <p class="imgtext"> TAMARA SFERCO</p>
     </section>
 
     <!--About me Section -->
     <article class="aboutme">
+        <!--photo of myself-->
         <img id="ABOUT" src="./assets/images/me.png" alt="Photo of Tamara">
         <h2> About Me </h2>
+        <!--Information about myself, with highlighted points-->
         <p> I'm <span id="highlight">Tamara</span>, I love all things technical and creative. I am an <span
                 id="highlight">aspiring Front-End Engineer</span> who can build a website with <span
                 id="highlight">HTML, CSS and GitHub Pages.</span> </p>
@@ -54,18 +57,22 @@
 
         <!--Portfolio Gallery -->
         <div class="gallery">
+            <!--subcontainer to divide each thumbnail in the gallery/grid-->
             <div class="subcontainer">
+                <!--Image link to homework/project-->
                 <a href="https://tamaradawg.github.io/HOMEWORK1/">
                     <img id="horiseon" src="./assets/images/horiseon.png" alt="horiseon website thumbnail">
 
-
+                    <!-- The text which sits on top of the image link, acting as a title.-->
                     <div class="content">
                         <h3> HORISEON OPTIMISATION </h3>
                         <p> Improving the SEO and Accessibility of the Horiseon Website.</p>
                     </div>
                 </a>
             </div>
+            <!--maincontainer div contains the images below so that they can sit inline with eachother rather than in a column-->
             <div class="maincontainer">
+                <!--A repeat of lines 61-72, consisting the same image links and titles which will be edited in the future-->
                 <div class="subcontainer">
                     <a href="https://tamaradawg.github.io/HOMEWORK1/">
                         <img src="./assets/images/horiseon.png" alt="horiseon website thumbnail">
@@ -99,7 +106,9 @@
     <article class="contactform">
         <h2 id="CONTACT">Contact Me</h2>
         <p> Fill out your details below to contact me via email! </p>
+        <!--Contact form 'questions'-->
         <label for="fname">First Name</label>
+        <!--Inside the answer block, to fill in the blank with a placeholder message-->
         <input id="text" id="fname" name="firstname" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
@@ -109,15 +118,18 @@
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
         <input id="submit" value="Submit">
+        <!--Inserting other forms of contact/about me-->
         <h3> Socials </h3>
-
+        <!--UL to group links, however is styled to be invisible-->
         <ul>
+            <!--Link to Github-->
             <a href="https://github.com/TamaraDawg"> GITHUB </a>
+            <!--Link to LinkedIn-->
             <a href="https://www.linkedin.com/in/tamara-sferco-131273228/"> LINKEDIN </a>
         </ul>
     </article>
 
-
+    <!--end of body-->
 </body>
 
 <!--footer-->

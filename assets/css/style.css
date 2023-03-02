@@ -1,14 +1,22 @@
 /* Entire Site General Theme */
 :root {
     --dark: #331689;
+    /* DARK THEME COLOUR */
     --light: #E2DCFD;
+    /* LIGHT THEME COLOUR */
     --hover: #d4caf3;
+    /* HOVER COLOUR */
     --bg: rgb(233, 226, 238);
+    /* A GENERAL BACKGROUND COLOUR  */
 }
+
 
 .body {
     background-color: var(--dark);
+    /*Background Colour for entire website*/
 }
+
+/* GENERAL HEADER THEMES*/
 
 h1 {
     display: none;
@@ -29,6 +37,7 @@ h2 {
 
 }
 
+/* GENERAL WEBSITE BUTTON LAYOUT*/
 button {
     position: absolute;
     background-color: var(--dark);
@@ -40,32 +49,27 @@ button {
     font-size: 1rem;
 }
 
+/*HIGHLIGHTED TEXT STYLE*/
 #highlight {
     color: var(--dark);
     font-style: inherit;
 }
 
+/*WEBSITE STRUCTURE CSS:*/
 /*NAVIGATION BAR STYLE CSS*/
 .topnav {
-
-    /*display: none;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    background-color: var(--dark);
-    padding-left: 0.5rem;
-    padding-top: 1.75rem;
-    padding-bottom: 0.5rem;
-    overflow-x: hidden; */
     transition: 0.2s;
 }
 
+/*Dropdown Hamburger Menu CSS*/
+
 #hamburger {
     opacity: 0;
+    /* Default Checkbox is invisible*/
 }
 
 .hamnav label {
+    /*Visible hamburger Icon */
 
     display: inline-block;
     color: white;
@@ -76,14 +80,17 @@ button {
 }
 
 .topnav {
+    /*The options within navbar are hidden on default*/
     display: none;
 }
 
 .hamnav input:checked~.topnav {
+    /*When hamburger Icon clicked, the navbar options are listed*/
     display: block;
 }
 
 .topnav a {
+    /*styling of links listed in Navbar*/
     background: var(--dark);
     display: block;
     width: 100%;
@@ -96,15 +103,12 @@ button {
 }
 
 .topnav a:hover {
+    /*hover styling, when links are hovered with mouse.*/
     cursor: pointer;
     background-color: var(--hover);
     opacity: 70%;
     color: var(--dark);
 }
-
-
-
-
 
 
 /*HEADER*/
@@ -115,7 +119,9 @@ button {
 }
 
 /*MAIN IMAGE*/
+
 .container {
+    /*grouped text and image positioning/styling*/
     margin-top: 0.3rem;
     position: relative;
     text-align: center;
@@ -123,6 +129,7 @@ button {
 }
 
 .imgtext {
+    /*Header/text on top of the image*/
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     color: var(--light);
@@ -136,6 +143,7 @@ button {
 }
 
 #mainimg {
+    /*actual image sizing*/
     max-width: 100%;
 
     opacity: 80%;
@@ -143,23 +151,22 @@ button {
 
 /*ABOUT ME SECTION*/
 #ABOUT {
+    /*Image of myself*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-#ABOUT:hover {
-   
-}
-
 .aboutme {
+    /*The section's styling*/
     background: var(--bg);
     padding: 2rem;
 
 }
 
 .aboutme p {
+    /*The text within the section's styling */
     font-size: 1.2rem;
     text-align: center;
     margin: 1rem 2rem 2rem 2rem
@@ -167,37 +174,42 @@ button {
 
 /*WORKS/PORTFOLIO*/
 .work h2 {
+    /* Projects heading styling */
     color: var(--light);
     margin-bottom: 1rem;
 }
 
 .maincontainer {
+    /* contains subcontainer(s)*/
     display: flex;
+    /*allowing subcontainer elements within this class to sit inline/fitted*/
 }
+
 .subcontainer {
     position: relative;
-  /*  max-width: 25rem; */
+    /*  max-width: 25rem; */
 }
 
 .gallery {
+    /* Styling of entire section contents */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
+
 #horiseon {
+    /*Horiseon image size*/
     width: 600px;
 }
+
 .subcontainer img {
+    /* sizing of undefined images in the subcontainer*/
     width: 300px;
     opacity: 50%;
 }
-/*.gallery img {
-    opacity: 50%;
-    border-radius: 1.5625rem;
 
-} */
 
 .subcontainer a img:hover {
     opacity: 30%;
@@ -205,6 +217,7 @@ button {
 }
 
 .subcontainer .content {
+    /*The text titled on images styling*/
     position: absolute;
     bottom: 0;
     background-color: black;
@@ -230,8 +243,10 @@ textarea {
 
 }
 
+
 /* SUBMIT BUTTON */
 #submit {
+    /*styling submit button, color etc*/
     background-color: var(--dark);
     color: white;
     padding: 12px 20px;
@@ -241,12 +256,14 @@ textarea {
 }
 
 #submit:hover {
+    /*styling when submit button is hovered*/
     background-color: var(--light);
     color: var(--dark);
 }
 
-/* Add a background color and some padding around the form */
+
 .contactform {
+    /* Adding a background color and some padding around the form */
     color: var(--dark);
     border-radius: 5px;
     background-color: rgb(241, 241, 241);
@@ -255,14 +272,20 @@ textarea {
 
 .contactform p {
     text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .contactform h3 {
     text-align: center;
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
+/*SOCIALS IN CONTACT ME SECTION */
+
 .contactform ul {
+    /* Style of list is invisible, used to group */
     margin-top: 1rem;
     list-style-type: none;
     text-align: center;
@@ -272,11 +295,13 @@ textarea {
 }
 
 .contactform a {
+    /*no text decoration/underline on links*/
     text-decoration: none;
 
 }
 
 .contactform a:hover {
+    /*When links are hovered, a new colour shows*/
     color: #675896
 }
 
@@ -292,9 +317,12 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+/*SCREEN SIZING EDITS*/
 
-    /*Adjusted NavBar to fit large screen*/
+@media screen and (min-width: 768px) {
+    /*larger than phone screen sizes*/
+
+    /*Adjusted NavBar to fit large screen, Navbar does not drop down*/
     .topnav a {
         display: inline;
         padding: 0.5rem 1rem 1rem 1rem;
@@ -308,16 +336,21 @@ footer {
         padding: 0.5rem 1rem 1rem 1rem;
     }
 
+
     .hamnav label {
+        /*Hamburger menu no longer necessary*/
         display: none;
     }
 
 
 }
 
+
 @media screen and (max-width: 2000px) {
+    /*very large desktop screens*/
 
     #ABOUT {
+        /* preventing the About Me image to grow TOO large*/
         width: 25%;
     }
 
@@ -325,9 +358,11 @@ footer {
 
 
 @media screen and (max-width: 400px) {
+    /* very small screens */
 
 
     .imgtext {
+        /* prevents the TAMARA SFERCO text on top of main image from overlapping and becoming too jarring*/
         opacity: 0%;
     }
 
