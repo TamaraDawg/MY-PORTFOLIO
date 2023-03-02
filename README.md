@@ -15,6 +15,10 @@ To achieve this with HTML and CSS;
 GITHUB DEPLOYMENT: https://tamaradawg.github.io/MY-PORTFOLIO/
 
 DEPLOYMENT ON DESKTOP/LARGE SCREENS:
+
 ![LARGE SCREEN DEPLOYMENT](https://user-images.githubusercontent.com/122523521/222296289-65fcc05f-6720-4059-9e91-cf8acd19bfa7.png)
+
+
 DEPLOYMENT ON PHONE/SMALL SCREENS:
+
 ![SMALL SCREEN DEPLOYMENT](https://user-images.githubusercontent.com/122523521/222296299-f0fdc1c2-f32d-49a4-80ab-e73e6feea4b7.png)
